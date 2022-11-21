@@ -1,7 +1,26 @@
-$('.btn-menu').click(function () {
-  $('.mobilemenu').toggleClass('active');
-  $(this).toggleClass('active');
-})
+// $('#login_icon').click(function () {
+//   $('#login_downlist').toggleClass('active');
+//   $(this).toggleClass('active');
+// })
+
+$("body").click(function () {
+  $("#login_downlist").removeClass('active');
+  $("#login_icon").removeClass('active');
+});
+
+// 點擊DIV時、不向上層冒泡。
+$("#login_downlist").click(function (e) {
+  e.stopPropagation();
+});
+
+// // 點擊按鈕時顯示或隱藏DIV
+$("#login_icon").click(function (e) {
+  e.stopPropagation();
+  $('#login_downlist').toggleClass('active');
+  $("#login_icon").toggleClass('active');
+});
+
+
 var mySwiper_first = new Swiper(".mySwiper_first", {
   autoplay: {
     delay: 2500,
@@ -9,41 +28,11 @@ var mySwiper_first = new Swiper(".mySwiper_first", {
   },
 });
 
-var swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
- 
-    601: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 80,
-    },
-    962: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1280: {
-      slidesPerView: 3,
-      spaceBetween: 60,
-    },
-    
-    1440: {
-      slidesPerView: 3,
-      spaceBetween: 120,
-    },
-  },
-});
 
 var swiper = new Swiper(".mySwiper2", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".btn-next",
+    prevEl: ".btn-prev",
   },
 
   breakpoints: {
@@ -53,7 +42,7 @@ var swiper = new Swiper(".mySwiper2", {
     },
     414: {
       slidesPerView: 2,
-      spaceBetween: 60,
+      spaceBetween: 30,
     },
     768: {
       slidesPerView: 3,
@@ -65,7 +54,7 @@ var swiper = new Swiper(".mySwiper2", {
       spaceBetween: 80,
     },
 
- 
+
     962: {
       slidesPerView: 4,
       spaceBetween: 60,
@@ -93,7 +82,7 @@ var swiper = new Swiper(".mySwiper_super", {
     },
     414: {
       slidesPerView: 2,
-      spaceBetween: 60,
+      spaceBetween: 30,
     },
 
     768: {
@@ -124,26 +113,27 @@ var mySwiper_first = new Swiper(".mySwiper_saygood", {
   },
 });
 
-// $('.search').click(function () {
-//   $("body").click(function () {
-//     $('.other_search').toggleClass('active');
-//     $('.search').toggleClass('active');
-//   });
-
-// })
-
-// 點擊畫面DIV以外的任何地方就隱藏DIV
-// $("body").click(function(){
-//   $("#content").hide();
-// });
- 
-// // 點擊DIV時、不向上層冒泡。
-// $("#content").click(function(e){
-//   e.stopPropagation();
-// });
- 
-// // 點擊按鈕時顯示或隱藏DIV
-// $("#btn").click(function(e){
-//   e.stopPropagation();
-//   $("#content").toggle();
-// });
+function GoForm() { //這裡要對應到自己的 javascript 名稱
+  //宣告欄位
+  var field1 = $("[name='email']").val();
+  var field2 = $("[name='text']").val();
+  $.ajax({
+      url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd0e7cZv5fRDHzV_t9VOATCqZqMIVCqfTlNVLHgVQ8fiMBl6Q/formResponse", //Google Form 裡面的 form action 網址 ＊＊記得要填＊＊
+      data: { //Google Form 裡面的欄位 name ＊＊記得要改＊＊
+        "entry.694052018":field1,
+        "entry.548843217":field2
+      },
+      type: "POST",
+      dataType: "xml",
+      statusCode: {
+          0: function () {
+              alert("已送出!"); //完成送出表單的警告視窗
+              window.location.reload();
+          },
+          200: function () {
+              alert("已送出!"); //完成送出表單的警告視窗
+              window.location.reload();
+          }
+      }
+  });
+}

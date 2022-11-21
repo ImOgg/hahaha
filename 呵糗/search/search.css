@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+/* Base -------------------------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Rubik, Arial, Helvetica, "微軟正黑體", sans-serif;
+    background: #f3efe8;
+    margin: auto;
+    background-color: #f3efe8;
+    /* background-image: url(../images/relax2.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    /* border: 1px solid pink; */
+}
+
+img {
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*  */
+.container {
+    position: relative;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.search {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: auto;
+    display: flex;
+    margin-top: 200px;
+}
+
+/* 左邊搜尋 */
+.search_left {
+    overflow: auto;
+    height: 600px;
+    width: 20%;
+    background: #fff;
+    border: 1px solid #E9EBF3;
+}
+
+/* 開合選單 */
+ul {
+    list-style: none;
+}
+
+.lesson {
+    margin: auto;
+}
+
+.lesson__ls {
+    padding: 0;
+}
+
+.active_title {
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-bottom: 4px solid #D5D7DD;
+    font-size: 24px;
+}
+
+.lesson__title {
+    padding: 0 15px;
+    color: #fff;
+    line-height: 2.5;
+    font-weight: normal;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.city_type {
+    display: none;
+    position: relative;
+    padding: .667em 1em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    line-height: 1.6;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.city_type::before {
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    content: '';
+    border: solid 10px transparent;
+    border-bottom-color: #fff;
+}
+
+.lesson__title--ui {
+    background-color: #FF7A00;
+}
+
+
+/* 選取框設定 */
+
+.city_item {
+    border-bottom: 1px solid #D5D7DD;
+    padding: .666rem 1rem;
+}
+
+.city_type .city_item:last-child {
+    border-bottom: none;
+}
+
+.city_item label span {
+    font-size: 20px;
+}
+
+.city_item input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    /* 取消預設外觀 */
+    background-color: #fff;
+    position: relative;
+}
+
+.city_item input[type='checkbox']:checked {
+    border: 1px solid #FF7A00;
+    background-color: #FF7A00;
+}
+
+.city_item input[type='checkbox']:checked:after {
+    content: " ✓";
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 16px;
+    position: absolute;
+}
+
+
+/* 右邊卡片區 */
+.search_right {
+    width: 80%;
+    margin-left: 24px;
+}
+
+.search_right_title {
+    line-height: 72px;
+    font-size: 48px;
+    padding-top: 8px;
+    padding-bottom: 28px;
+    border-bottom: 4px solid #D5D7DD;
+}
+
+.search_card {
+    background-color: #fff;
+    height: auto;
+    display: flex;
+    margin-top: 28px;
+    border: 1px solid #E9EBF3;
+}
+
+.search_card_img {
+    width: 25%;
+    background-image: url(../images/bar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search_card_info {
+    width: 75%;
+    padding: 12px 24px;
+    line-height: 30px;
+}
+
+.search_card_info h2 {
+    margin-bottom: 4px;
+}
+
+.search_card_info p {
+    color: #5E5955;
+}
+.want_chill_star i{
+    color: #FF7A00;
+}
+.want_chill_star span{
+    color: #999;
+    letter-spacing: 0.5px;
+    margin-left: 4px;
+}
+.search_card:last-child {
+    margin-bottom: 28px;
+}
+
+.search_card_info div {
+    text-align: right;
+}
+
+/* 店家資訊 */
+.shop_info {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.shop_info h2 {
+    font-size: 28px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    line-height: 42px;
+}
+
+.shop_info_img {
+    display: flex;
+    max-width: 1200px;
+    height: 480px;
+}
+
+.shop_info_img_1,.shop_info_img_2{
+    width: 50%;
+}
+.shop_info_img_1{
+    background-image: url(../images/bistro.png);
+    margin-right: 4px;
+    height: 484px;
+}
+.shop_info_img_2_top{
+    background-image: url(../images/bistro-1.jpg);
+    margin-bottom: 4px;
+}
+.shop_info_img_2_bottom{
+    background-image: url(../images/bistro-2.jpg);
+}
+.shop_info_img_2_top,.shop_info_img_2_bottom{
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.shop_info_img_2_top,.shop_info_img_2_bottom,.shop_info_img_1{
+    background-position: center;
+    background-size: cover;
+}
+
+.shop_desc{
+    display: flex;
+    margin-top: 16px;
+}
+.shop_desc_container{
+    width: 50%;
+}
+.shop_desc_container:last-child{
+    margin-top: 80px;
+}
+.shop_desc_left,.shop_desc_right{
+    border: 2px solid #E9EBF3;
+    padding: 24px 16px;
+    margin-left: 8px;
+    background-color: #FF7A00;
+    color: #fff;
+}
+
+.shop_desc_left span,.shop_desc_right span{
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+}
+.map_container {
+    width: 100%;
+    margin: auto;
+}
+.shop_position{
+    margin: auto;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.map_container iframe{
+    width: 100%;
+}
+@media (max-width:768px) {
+}

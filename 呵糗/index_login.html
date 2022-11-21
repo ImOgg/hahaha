@@ -16,7 +16,7 @@
 <body>
     <div class="header">
         <div class="nav">
-            <div class="nav-icon"><a href="./index.html">
+            <div class="nav-icon"><a href="./index_login.html">
                     <div>呵Chill</div>
                 </a></div>
             <div class="nav-list">
@@ -24,26 +24,47 @@
                     <div class="nav-item moba_list" id="moba_list"><a href="javascript:;">
                             <div> <i class="bi bi-list"></i></div></i>
                         </a></div>
-                    <div class="nav-item btn-bottom-slide desk_none"><a href="./search/search_nologin.html">
+                    <div class="nav-item btn-bottom-slide desk_none"><a href="./search/search_login.html">
                             <div>探索 </div>
                         </a></div>
-                    <div class="nav-item btn-bottom-slide desk_none"><a href="./login/need_login.html">
+                    <div class="nav-item btn-bottom-slide desk_none"><a href="./settle_up/single.html">
                             <div>分帳</div>
                         </a></div>
                     <!-- 直接連到登入葉面 -->
-                    <div class="nav-item "><a href="./login/login_page.html">
+                    <div class="nav-item ">
+                        <a href="javascript:;">
                             <div class="login" id="login_icon">
                                 <i class="bi bi-person-circle"></i>
-                                <div>登入</div>
+                                <div>邦加羅爾</div>
                             </div>
                         </a>
+                        <div class="downlist">
+                            <a href="./settle_up/single.html" class="downlist_fs">
+                                <div class="downitem downlist_fs_1">群組</div>
+                            </a>
+                            <a href="./group/group_page1.html" class="downlist_fs">
+                                <div class="downitem">新增群組</div>
+                            </a>
+                            <a href="./account/account.html" class="downlist_fs">
+                                <div class="downitem">帳號</div>
+                            </a>
+                            <a href="./login/logout.html" class="downlist_fs">
+                                <div class="downitem downlist_fs_4">登出</div>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
         <div class="moba_list_item">
-            <a href="./search/search_nologin.html"><div class="moba_item">探索</div></a>
-            <a href="./final/login/need_login.htm"><div class="moba_item">分帳</div></a>
+            <a href="./search/search_login.html">
+                <div class="moba_item">探索</div>
+            </a>
+            <a href="./settle_up/single.html">
+                <div class="moba_item">分帳</div>
+            </a>
         </div>
     </div>
 
@@ -397,13 +418,6 @@
                 <h2>Join Us To <span>Chill</span></h2>
                 <p>若您有任何關於怎麼<span>Chill</span>，如何<span>Chill</span>才能更<span>Chill</span>，比<span>Chill</span>還<span>Chill</span>的問題，歡迎透過表單，我將會在營業時間回覆你:)</p>
             </div>
-            <!-- <div class="join_us_something">
-                <input type="email" name="email" id="email" placeholder="email@email.com">
-                <input type="text" name="text" id="text" placeholder="Your Message">
-                <div class="join_us_something_btn">
-                    <button class="see_more" type="submit">Submit</button>
-                </div>
-            </div> -->
             <form action="javascript:GoForm()" class="join_us_something">
                 <input type="text" name="email" id="email" placeholder="email@email.com">
                 <input type="text" name="text" id="text" placeholder="Your Message">

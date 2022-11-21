@@ -21,82 +21,7 @@ a {
 	text-decoration: none;
 }
 
-/* 導覽列--------------------------------- */
-.header {
-	max-width: 100%;
-	position: fixed;
-	right: 0;
-	left: 0;
-	top: 0;
-	z-index: 999;
-	background-color: #fff;
-}
-
-.nav {
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	max-width: 1440px;
-}
-
-.deskmenu {
-	display: flex;
-}
-
-.nav-item {
-	position: relative;
-}
-
-.nav-icon, .nav-item {
-	margin: 8px 16px;
-}
-
-.nav-icon,
-.nav-item a {
-	color: #5E5955;
-	font-size: 1.5rem;
-	display: flex;
-	padding: 4px 8px;
-}
-
-.login {
-	border: 2px solid #E9EBF3;
-	border-radius: 30px;
-	padding: 4px 8px;
-	/* color/main */
-	transition: ease-in-out .5s;
-}
-
-.login .bi {
-	margin-left: 6px;
-	margin-right: 6px;
-}
-
-.login:hover, .login:focus {
-	background: #FFFFFF;
-	border: 1px solid #E9EBF3;
-	box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD;
-}
-
-.nav-item.btn-bottom-slide::before {
-	content: "";
-	inset: 0;
-	position: absolute;
-	z-index: -1;
-	border-bottom: #FF7A00 4px solid;
-	transform: scaleX(0);
-	transition: transform 300ms ease-in-out;
-	transform-origin: left;
-}
-
-.nav-item.btn-bottom-slide:hover::before,
-.nav-item.btn-bottom-slide:focus::before {
-	transform: scaleX(1);
-}
-
-.nav-item.btn-bottom-slide {
-	z-index: 1;
-}
+/* ------------------------------------------------- */
 
 .container {
 	margin-top: 65px;
@@ -126,7 +51,6 @@ a {
 .tab {
 	max-width: 1440px;
 	margin: auto;
-
 }
 
 .tab-title {
@@ -155,17 +79,17 @@ a {
 	color: #5E5955;
 	background: #FFFFFF;
 	border: 1px solid #E9EBF3;
-	box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD;
+	/* box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD; */
 	border-radius: 15px;
 	font-size: 20px;
 }
 
-li:hover {
+.tab-title li:hover {
 	background: #FFFFFF;
 	border-radius: 15px;
 }
 
-li.active {
+.tab-title li.active {
 	background: #FFFFFF;
 	border-radius: 15px;
 	box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD;
@@ -178,7 +102,7 @@ li.active {
 	border-radius: 15px;
 }
 
-.see_more {
+/* .see_more {
 	background: #FFFFFF;
 	padding: .5em 1em;
 	font-size: 16px;
@@ -187,14 +111,14 @@ li.active {
 	cursor: pointer;
 	border-radius: 8px;
 	transition: all .5s;
-}
+} */
 
-.see_more:hover,
+/* .see_more:hover,
 .see_more:focus {
 	background: #FF7A00;
 	color: #fff;
 	box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD;
-}
+} */
 
 .btn_center {
 	margin-top: 1.5rem;

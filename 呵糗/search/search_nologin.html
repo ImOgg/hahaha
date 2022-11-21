@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>呵Chill</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../final/header/header.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="nav-icon"><a href="../index.html">
+                    <div>呵Chill</div>
+                </a></div>
+            <div class="nav-list">
+                <div class="deskmenu">
+                    <div class="nav-item moba_list" id="moba_list"><a href="javascript:;">
+                            <div> <i class="bi bi-list"></i></div></i>
+                        </a></div>
+                    <div class="nav-item btn-bottom-slide desk_none"><a href="./search_nologin.html">
+                            <div>探索 </div>
+                        </a></div>
+                    <div class="nav-item btn-bottom-slide desk_none"><a href="../login/need_login.html">
+                            <div>分帳</div>
+                        </a></div>
+                    <!-- 直接連到登入葉面 -->
+                    <div class="nav-item "><a href="../login/login_page.html">
+                            <div class="login" id="login_icon">
+                                <i class="bi bi-person-circle"></i>
+                                <div>登入</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moba_list_item">
+            <a href="javascript:;"><div class="moba_item">探索</div></a>
+            <a href="javascript:;"><div class="moba_item">分帳</div></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="search">
+            <div class="search_left">
+                <div class="lesson">
+                    <ul class="lesson__ls" id="LessonLs">
+                        <h3 class="active_title">目的地</h3>
+                        <li class="lesson__item">
+                            <h2 class="lesson__title lesson__title--ui">北部</h2>
+                            <div class="city_type">
+                                <div class="city_item">
+                                    <label for="KEL">
+                                        <input type="checkbox" id="KEL" name="KEL">
+                                        <span>基隆市</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="NTPC">
+                                        <input type="checkbox" id="NTPC" name="NTPC">
+                                        <span>新北市</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="TPE">
+                                        <input type="checkbox" id="TPE" name="TPE">
+                                        <span>台北市</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="TYN">
+                                        <input type="checkbox" id="TYN" name="TYN">
+                                        <span>桃園市</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="HSZ1">
+                                        <input type="checkbox" id="HSZ1" name="HSZ1">
+                                        <span>新竹縣</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="HSZ2">
+                                        <input type="checkbox" id="HSZ2" name="HSZ2">
+                                        <span>新竹市</span>
+                                    </label>
+                                </div>
+
+                                <div class="city_item">
+                                    <label for="ILA1">
+                                        <input type="checkbox" id="ILA1" name="ILA1">
+                                        <span>宜蘭縣</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="ILA2">
+                                        <input type="checkbox" id="ILA2" name="ILA2">
+                                        <span>宜蘭市</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lesson__item">
+                            <h2 class="lesson__title lesson__title--ui">中部</h2>
+                            <div class="city_type">
+                                    <div class="city_item">
+                                        <label for="ZMI1">
+                                            <input type="checkbox" id="ZMI1" name="ZMI1">
+                                            <span>苗栗市</span>
+                                        </label>
+                                    </div>
+                                    <div class="city_item">
+                                        <label for="ZMI2">
+                                            <input type="checkbox" id="ZMI2" name="ZMI2">
+                                            <span>苗栗縣</span>
+                                        </label>
+                                    </div>
+                                    <div class="city_item">
+                                        <label for="TXG">
+                                            <input type="checkbox" id="TXG" name="TXG">
+                                            <span>台中市</span>
+                                        </label>
+                                    </div>
+                                    <div class="city_item">
+                                        <label for="CHW1">
+                                            <input type="checkbox" id="CHW1" name="CHW1">
+                                            <span>彰化縣</span>
+                                        </label>
+                                    </div>
+                                    <div class="city_item">
+                                        <label for="CHW2">
+                                            <input type="checkbox" id="CHW2" name="CHW2">
+                                            <span>彰化市</span>
+                                        </label>
+                                    </div>
+                                    <div class="city_item">
+                                        <label for="NTC1">
+                                            <input type="checkbox" id="NTC1" name="NTC1">
+                                            <span>南投市</span>
+                                        </label>
+                                    </div>
+                                    <div class="city_item">
+                                        <label for="NTC2">
+                                            <input type="checkbox" id="NTC2" name="NTC2">
+                                            <span>南投縣</span>
+                                        </label>
+                                    </div>
+                                    <div class="city_item">
+                                        <label for="YUN">
+                                            <input type="checkbox" id="YUN" name="YUN">
+                                            <span>雲林縣</span>
+                                        </label>
+                                    </div>
+                               
+                        </li>
+                        <li class="lesson__item">
+                            <h2 class="lesson__title lesson__title--ui">南部</h2>
+                            <div class="city_type">
+                                <div class="city_item">
+                                    <label for="CYI1">
+                                        <input type="checkbox" id="CYI1" name="CYI1">
+                                        <span>嘉義縣</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="CYI2">
+                                        <input type="checkbox" id="CYI2" name="CYI2">
+                                        <span>嘉義市</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="TNN">
+                                        <input type="checkbox" id="TNN" name="TNN">
+                                        <span>台南市</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="KHH">
+                                        <input type="checkbox" id="KHH" name="KHH">
+                                        <span>高雄市</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="PIF1">
+                                        <input type="checkbox" id="PIF1" name="PIF1">
+                                        <span>屏東縣</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="PIF2">
+                                        <input type="checkbox" id="PIF2" name="PIF2">
+                                        <span>屏東市</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="lesson__item">
+                            <h2 class="lesson__title lesson__title--ui">東部</h2>
+                            <div class="city_type">
+
+                                <div class="city_item">
+                                    <label for="HUN1">
+                                        <input type="checkbox" id="HUN1" name="HUN1">
+                                        <span>花蓮縣</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="HUN2">
+                                        <input type="checkbox" id="HUN2" name="HUN2">
+                                        <span>花蓮市</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="TTT1">
+                                        <input type="checkbox" id="TTT1" name="TTT1">
+                                        <span>台東市</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="TTT2">
+                                        <input type="checkbox" id="TTT2" name="TTT2">
+                                        <span>台東縣</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="lesson__item">
+                            <h2 class="lesson__title lesson__title--ui">外島地區</h2>
+                            <div class="city_type">
+                                <div class="city_item">
+                                    <label for="PEH">
+                                        <input type="checkbox" id="PEH" name="PEH">
+                                        <span>澎湖縣</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="GNI">
+                                        <input type="checkbox" id="GNI" name="GNI">
+                                        <span>綠島</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="KYD">
+                                        <input type="checkbox" id="KYD" name="KYD">
+                                        <span>蘭嶼</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="KNH">
+                                        <input type="checkbox" id="KNH" name="KNH">
+                                        <span>金門縣</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="MFK">
+                                        <input type="checkbox" id="MFK" name="MFK">
+                                        <span>馬祖</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="LNN">
+                                        <input type="checkbox" id="LNN" name="LNN">
+                                        <span>連江縣</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <h3 class="active_title">怎麼Chill</h3>
+                        <li class="lesson__item">
+                            <h2 class="lesson__title lesson__title--ui">怎麼Chill</h2>
+                            <div class="city_type">
+                                <div class="city_item">
+                                    <label for="camp">
+                                        <input type="checkbox" id="camp" name="camp">
+                                        <span>露營</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="bar">
+                                        <input type="checkbox" id="bar" name="bar">
+                                        <span>酒吧</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="drink">
+                                        <input type="checkbox" id="drink" name="drink">
+                                        <span>喝到吐</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="play">
+                                        <input type="checkbox" id="play" name="play">
+                                        <span>玩到爽</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="restaurant">
+                                        <input type="checkbox" id="restaurant" name="restaurant">
+                                        <span>大飯店</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="spa">
+                                        <input type="checkbox" id="spa" name="spa">
+                                        <span>按摩</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="spring">
+                                        <input type="checkbox" id="spring" name="spring">
+                                        <span>溫泉</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="ZMI1">
+                                        <input type="checkbox" id="ZMI1" name="ZMI1">
+                                        <span>沙龍</span>
+                                    </label>
+                                </div>
+                                <div class="city_item">
+                                    <label for="ZMI2">
+                                        <input type="checkbox" id="ZMI2" name="ZMI2">
+                                        <span>美容</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search_right">
+                <div class="search_right_title"><h2>新北市板橋</h2></div>
+                <div class="search_card">
+                    <div class="search_card_img"></div>
+                    <div class="search_card_info">
+                        <h3>YELO seoul Bistro 首爾餐酒館</h3>
+                        <p>YELO Seoul Bistro首爾餐酒館是MANNA韓式烤肉旗下第二間自創品牌
+                        ，保留了韓國的元素同時加入義式風格做結合創造出許多創意料理</p>
+                        <p>營業時間：
+                            平日（一～五）17-24 /
+                            假日（六、日）12-24</p>
+                        <p>連絡電話：
+                            02 2952 9288</p>
+                        <p>店家地址：
+                            板橋市縣民大道一段308號, Taipei, Taiwan</p>
+                        <div><button class="see_more">更多資訊</button></div>
+                    </div>
+                </div>
+
+                <div class="search_card">
+                    <div class="search_card_img"></div>
+                    <div class="search_card_info">
+                        <h3>YELO seoul Bistro 首爾餐酒館</h3>
+                        <p>YELO Seoul Bistro首爾餐酒館是MANNA韓式烤肉旗下第二間自創品牌
+                            ，保留了韓國的元素同時加入義式風格做結合創造出許多創意料理</p>
+                        <p>營業時間：
+                            平日（一～五）17-24 /
+                            假日（六、日）12-24</p>
+                        <p>連絡電話：
+                            02 2952 9288</p>
+                        <p>店家地址：
+                            板橋市縣民大道一段308號, Taipei, Taiwan</p>
+                        <div><button class="see_more">更多資訊</button></div>
+                    </div>
+                </div>
+
+                <div class="search_card">
+                    <div class="search_card_img"></div>
+                    <div class="search_card_info">
+                        <h3>YELO seoul Bistro 首爾餐酒館</h3>
+                        <p>YELO Seoul Bistro首爾餐酒館是MANNA韓式烤肉旗下第二間自創品牌
+                            ，保留了韓國的元素同時加入義式風格做結合創造出許多創意料理</p>
+                        <p>營業時間：
+                            平日（一～五）17-24 /
+                            假日（六、日）12-24</p>
+                        <p>連絡電話：
+                            02 2952 9288</p>
+                        <p>店家地址：
+                            板橋市縣民大道一段308號, Taipei, Taiwan</p>
+                        <div><button class="see_more">更多資訊</button></div>
+                    </div>
+                </div>
+
+                <div class="search_card">
+                    <div class="search_card_img"></div>
+                    <div class="search_card_info">
+                        <h3>YELO seoul Bistro 首爾餐酒館</h3>
+                        <p>YELO Seoul Bistro首爾餐酒館是MANNA韓式烤肉旗下第二間自創品牌
+                            ，保留了韓國的元素同時加入義式風格做結合創造出許多創意料理</p>
+                        <p>營業時間：
+                            平日（一～五）17-24 /
+                            假日（六、日）12-24</p>
+                        <p>連絡電話：
+                            02 2952 9288</p>
+                        <p>店家地址：
+                            板橋市縣民大道一段308號, Taipei, Taiwan</p>
+                        <div><button class="see_more">更多資訊</button></div>
+                    </div>
+                </div>
+
+                <div class="search_card">
+                    <div class="search_card_img"></div>
+                    <div class="search_card_info">
+                        <h3>YELO seoul Bistro 首爾餐酒館</h3>
+                        <p>YELO Seoul Bistro首爾餐酒館是MANNA韓式烤肉旗下第二間自創品牌
+                            ，保留了韓國的元素同時加入義式風格做結合創造出許多創意料理</p>
+                        <p>營業時間：
+                            平日（一～五）17-24 /
+                            假日（六、日）12-24</p>
+                        <p>連絡電話：
+                            02 2952 9288</p>
+                        <p>店家地址：
+                            板橋市縣民大道一段308號, Taipei, Taiwan</p>
+                        <div><button class="see_more">更多資訊</button></div>
+                    </div>
+                </div>
+
+                <div class="search_card">
+                    <div class="search_card_img"></div>
+                    <div class="search_card_info">
+                        <h3>YELO seoul Bistro 首爾餐酒館</h3>
+                        <p>YELO Seoul Bistro首爾餐酒館是MANNA韓式烤肉旗下第二間自創品牌
+                            ，保留了韓國的元素同時加入義式風格做結合創造出許多創意料理</p>
+                        <p>營業時間：
+                            平日（一～五）17-24 /
+                            假日（六、日）12-24</p>
+                        <p>連絡電話：
+                            02 2952 9288</p>
+                        <p>店家地址：
+                            板橋市縣民大道一段308號, Taipei, Taiwan</p>
+                        <div><button class="see_more">更多資訊</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../final/header/app.js"></script>
+    <script src="./search.js"></script>
+</body>
+
+</html>
