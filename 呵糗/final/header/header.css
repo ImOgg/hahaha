@@ -21,19 +21,20 @@ img {
 a {
 	text-decoration: none;
 }
+
 /* 讓滑鼠滾動產生的那個bar消失 */
 html {
-    overflow: -moz-hidden-unscrollable;
-    height: 100%;
+	overflow: -moz-hidden-unscrollable;
+	height: 100%;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 body {
-    -ms-overflow-style: none;
-    height: 100%;
+	-ms-overflow-style: none;
+	height: 100%;
 	width: calc(100vw + 18px);
 	overflow: auto;
 }
@@ -49,6 +50,13 @@ body {
 	z-index: 999;
 	/* background-color: rgba(0, 0, 0, 0.5); */
 	background-color: #fff;
+	transition: ease 0.3s;
+}
+
+.header.sticky {
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	backdrop-filter: blur(5px);
 }
 
 .nav {
@@ -83,6 +91,11 @@ body {
 	font-size: 24px;
 	/* color: #fff; */
 	color: #5E5955;
+}
+
+.header.sticky .nav-icon a,
+.header.sticky .nav-item a {
+	color: #fff;
 }
 
 .nav-item .downlist_fs {
@@ -225,14 +238,14 @@ body {
 
 /* 按鈕 */
 .see_more {
-    background: #FFFFFF;
-    font-size: 16px;
-    border: 1px solid #FF7A00;
-    color: #FF7A00;
-    position: relative;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: all .5s;
+	background: #FFFFFF;
+	font-size: 16px;
+	border: 1px solid #FF7A00;
+	color: #FF7A00;
+	position: relative;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: all .5s;
 	width: 140px;
 	height: 36px;
 	text-align: center;
@@ -241,7 +254,7 @@ body {
 
 .see_more:hover,
 .see_more:focus {
-    background: #FF7A00;
-    color: #fff;
-    box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD;
+	background: #FF7A00;
+	color: #fff;
+	box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD;
 }

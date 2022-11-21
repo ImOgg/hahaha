@@ -20,3 +20,8 @@ $("#moba_list").click(function (e) {
   e.stopPropagation();
   $('.moba_list_item').toggleClass('active');
 });
+window.addEventListener("scroll", function () {
+  var header = document.querySelector(".header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+  // console.log(window.scrollY);
+})
