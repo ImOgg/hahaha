@@ -1,26 +1,4 @@
-@charset "utf-8";
 
-/* Base -------------------------------------- */
-*, *::before, *::after {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
-body {
-	font-family: Rubik, Arial, Helvetica, "微軟正黑體", sans-serif;
-	background: #f3efe8;
-	margin: auto;
-	
-}
-
-img {
-	vertical-align: bottom;
-}
-
-a {
-	text-decoration: none;
-}
 /* _________________________________________________ */
 .container {
 	max-width: 768px;
@@ -37,7 +15,6 @@ a {
 	text-align: center;
 	background: #fff;
 	border: 3px solid #E9EBF3;
-	/* box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD; */
 	border-radius: 30px;
 	line-height: 30px;
 }
@@ -96,7 +73,6 @@ a {
 	color: #5E5955;
 	transition: ease-out .3s;
 	width: 100%;
-	
 }
 
 .newgroup_page2 form .input_class:focus {

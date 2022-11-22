@@ -258,3 +258,12 @@ body::-webkit-scrollbar {
 	color: #fff;
 	box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD;
 }
+
+/* 遮罩 */
+.overlay {
+	position: absolute;
+	z-index: 998;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.2);
+	inset: 0;
+}
