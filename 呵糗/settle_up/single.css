@@ -102,7 +102,8 @@
 	line-height: 36px;
 	align-items: center;
 }
-.mg_top{
+
+.mg_top {
 	margin-top: 16px;
 }
 
@@ -124,11 +125,28 @@
 
 .paytitle {
 	font-size: 32px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bi-x-lg {
+	cursor: pointer;
+}
+
+.newpay .lg_h3 {
+	font-size: 24px;
+	text-align: center;
+}
+
+.newpay .lg_h3_sure {
+	margin-top: 8px;
+	text-align: center;
 }
 
 .newpay h3 {
 	font-size: 20px;
 }
+
 
 .h3_mg {
 	margin-left: 16px;
@@ -138,9 +156,11 @@
 	font-size: 36px;
 	text-align: right;
 }
-.payman span{
-	margin-left: 16px;
+
+.payman span {
+	margin-left: 8px;
 }
+
 .payman_check {
 	justify-content: space-between;
 }
@@ -148,3 +168,63 @@
 .seemore_center {
 	text-align: center;
 }
+
+/*  */
+.payman_right input[type='checkbox'] {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #999;
+	border-radius: 3px;
+	-webkit-appearance: none;
+	/* 取消預設外觀 */
+	background-color: #fff;
+	position: relative;
+}
+
+.payman_right input[type='checkbox']:checked {
+	border: 1px solid #FF7A00;
+	background-color: #FF7A00;
+}
+
+.payman_right input[type='checkbox']:checked:after {
+	content: " ✓";
+	font-size: 20px;
+	font-weight: 900;
+	color: #fff;
+	line-height: 16px;
+	position: absolute;
+}
+
+#new_pay_container,
+#group_member_plus,
+#update_group,
+#clear_pay_88 {
+	display: none;
+}
+
+#new_pay_container.active,
+#clear_pay_88.active,
+#group_member_plus.active,
+#update_group.active {
+	display: block;
+}
+
+.clearpay {
+	background: #FFFFFF;
+	/* effect/初始狀態 */
+	box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD;
+	border-radius: 30px;
+}
+
+#clear_cancel{
+	color: #000;
+	border: #D5D7DD 1px solid ;
+}
+#clear_cancel:hover,
+#clear_cancel:focus{
+	background: #FFFFFF;
+	box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD;
+	color: #FF7A00;
+	border:#FF7A00 1px solid ;;
+}
+
