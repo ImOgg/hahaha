@@ -20,6 +20,7 @@ img {
 
 a {
 	text-decoration: none;
+	color: #000;
 }
 
 /* 讓滑鼠滾動產生的那個bar消失 */

@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../final/header/header.css">
     <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+
 </head>
 
 <body>
@@ -72,15 +76,15 @@
         <div class="shop_info">
             <h2>YELO seoul Bistro 首爾餐酒館</h2>
             <div class="shop_info_img">
-                <div class="shop_info_img_1"></div>
+                <div class="shop_info_img_1" data-aos="fade-up-right"></div>
                 <div class="shop_info_img_2">
-                    <div class="shop_info_img_2_top"></div>
-                    <div class="shop_info_img_2_bottom"></div>
+                    <div class="shop_info_img_2_top" data-aos="fade-down-left"></div>
+                    <div class="shop_info_img_2_bottom" data-aos="fade-up-left"></div>
                 </div>
             </div>
 
             <div class="shop_desc">
-                <div class="shop_desc_container">
+                <div class="shop_desc_container" data-aos="fade-right">
                     <div class="shop_desc_left">
                         <span>韓國是近年來台灣旅客喜愛前往的國家</span>
                         <span>相對韓式料理就吸引了食客的味蕾</span>
@@ -89,7 +93,7 @@
                         <span>如果將韓式料理與其他國家的口味結合，是否會蹦出新滋味</span>
                     </div>
                 </div>
-                <div class="shop_desc_container">
+                <div class="shop_desc_container" data-aos="fade-left">
                     <div class="shop_desc_right">
                         <h3>店家資訊</h3>
                         <span>店名 : YELO Seoul Bistro首爾餐酒館</span>
@@ -114,6 +118,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../final/header/app.js"></script>
     <script src="./search.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
