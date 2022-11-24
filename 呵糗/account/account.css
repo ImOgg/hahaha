@@ -2,20 +2,16 @@
     max-width: 1440px;
     margin: auto;
     margin-top: 120px;
-    /* border: 1px solid #000; */
 }
 
 .account {
     border: 1px solid #E9EBF3;
-    /* effect/初始狀態 */
-    /* filter: drop-shadow(-4px -2px 16px #FFFFFF) drop-shadow(4px 2px 16px #D5D7DD); */
     border-radius: 15px;
-    /* background: #fff; */
     padding: 32px 42px;
     background-image: url(../images/dan-burton-3_5OfvOhvl4-unsplash.jpg);
     background-size: cover;
     color: #fff;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .user_name_container {
@@ -24,22 +20,27 @@
     align-items: center;
     padding-bottom: 8px;
 }
-.account_info h2{
+
+.account_info h2 {
     font-size: 32px;
 }
-.account_info h3{
+
+.account_info h3 {
     font-size: 24px;
 }
-.account_info h2,.user_name_container{
+
+.account_info h2, .user_name_container {
     margin-bottom: 24px;
 }
-.user_name_title{
+
+.user_name_title {
     margin-bottom: 12px;
 }
-.outside_container{
+
+.outside_container {
     border: 1px solid #E9EBF3;
     padding: 12px 18px;
     border-radius: 15px;
     backdrop-filter: blur(5px);
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
 }
