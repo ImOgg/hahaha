@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+/* Base -------------------------------------- */
+*, *::before, *::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Rubik, "微軟正黑體", sans-serif;
+	background: #f3efe8;
+	margin: auto;
+	font-size: 16px;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* 讓滑鼠滾動產生的那個bar消失 */
+html {
+	overflow: -moz-hidden-unscrollable;
+	height: 100%;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+/* body {
+	-ms-overflow-style: none;
+	height: 100%;
+	width: calc(100vw + 18px);
+	overflow: auto;
+} */
+
+/* 導覽列--------------------------------- */
+.header {
+	line-height: 30px;
+	max-width: 100%;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	/* background-color: rgba(0, 0, 0, 0.5); */
+	background-color: #fff;
+	transition: ease 0.3s;
+}
+
+.header.sticky {
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	backdrop-filter: blur(5px);
+}
+
+.nav {
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1440px;
+}
+
+.deskmenu {
+	display: flex;
+}
+
+.bi-list {
+	opacity: 0;
+}
+
+.nav-item {
+	position: relative;
+	margin-left: 8px;
+}
+
+.nav-icon,
+.nav-item {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding: 6px 12px;
+}
+
+.nav-icon a,
+.nav-item a {
+	font-size: 24px;
+	/* color: #fff; */
+	color: #5E5955;
+}
+
+.header.sticky .nav-icon a,
+.header.sticky .nav-item a {
+	color: #fff;
+}
+
+.nav-item .downlist_fs {
+	font-size: 16px;
+}
+
+.bi-person-circle {
+	margin-right: 8px;
+}
+
+.login {
+	padding: 6px 12px;
+	display: flex;
+	border-radius: 15px;
+	transition: ease-in-out .5s;
+}
+
+.nav-icon a div,
+.btn-bottom-slide a div,
+.moba_list a div {
+	padding: 6px 12px;
+}
+
+#login_icon.active {
+	background-color: #fff;
+	color: #5E5955;
+	box-shadow: -4px -4px 16px rgba(195, 200, 205, 0.06), 4px 4px 18px rgba(0, 0, 0, 0.6);
+}
+
+.login:hover, .login:focus {
+	background-color: #fff;
+	color: #5E5955;
+	box-shadow: -4px -4px 16px rgba(195, 200, 205, 0.06), 4px 4px 18px rgba(0, 0, 0, 0.6);
+}
+
+.nav-item.btn-bottom-slide::before {
+	content: "";
+	inset: 0;
+	position: absolute;
+	z-index: -1;
+	border-bottom: #FF7A00 4px solid;
+	transform: scaleX(0);
+	transition: transform 300ms ease-in-out;
+	transform-origin: left;
+}
+
+.nav-item.btn-bottom-slide:hover::before,
+.nav-item.btn-bottom-slide:focus::before {
+	transform: scaleX(1);
+}
+
+.nav-item.btn-bottom-slide {
+	z-index: 1;
+}
+
+.login {
+	position: relative;
+}
+
+.nav-item {
+	position: relative;
+}
+
+.downlist {
+	position: absolute;
+	margin-top: 20px;
+	width: 150px;
+	border-radius: 15px;
+	background: #F3EFE8;
+	box-shadow: -4px -2px 16px #F3EFE8, 4px 2px 16px #D5D7DD;
+	opacity: 0;
+	transition: ease-in-out .5s;
+	border: 1px solid #D7D7D7;
+}
+
+.downlist.active {
+	opacity: 1;
+}
+
+.downitem {
+	padding: 6px 12px;
+	cursor: pointer;
+}
+
+.downitem:hover {
+	background: #FF7A00;
+	color: #fff;
+}
+
+.downlist_fs_1:hover {
+	border-radius: 15px 15px 0 0;
+}
+
+.downlist_fs_4:hover {
+	border-radius: 0 0 15px 15px;
+}
+
+.moba_list_item {
+	text-align: center;
+}
+
+.moba_list_item a {
+	color: #5E5955;
+}
+
+.moba_item {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.moba_item:hover,
+.moba_item:focus {
+	background: #FF7A00;
+}
+
+.moba_list_item {
+	display: none;
+}
+
+.moba_list_item.active {
+	display: block;
+}
+
+/* 手機板 */
+@media (max-width:601px) {
+	.desk_none {
+		display: none;
+	}
+
+	.bi-list {
+		opacity: 1;
+	}
+
+	.nav-item {
+		margin-left: 0px;
+		padding: 6px 2px;
+	}
+}
+
+/* 按鈕 */
+.see_more {
+	background: #FFFFFF;
+	font-size: 16px;
+	border: 1px solid #FF7A00;
+	color: #FF7A00;
+	position: relative;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: all .5s;
+	width: 140px;
+	height: 36px;
+	text-align: center;
+	align-items: center;
+}
+
+.see_more:hover,
+.see_more:focus {
+	background: #FF7A00;
+	color: #fff;
+	box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px #D5D7DD;
+}
+
+/* 遮罩 */
+.overlay {
+	position: absolute;
+	z-index: 998;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.2);
+	inset: 0;
+}

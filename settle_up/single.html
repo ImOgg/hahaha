@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>呵Chill</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../final/header/header.css">
+    <link rel="stylesheet" href="./single.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="nav-icon"><a href="../index_login.html">
+                    <div>呵Chill</div>
+                </a></div>
+            <div class="nav-list">
+                <div class="deskmenu">
+                    <div class="nav-item moba_list" id="moba_list"><a href="javascript:;">
+                            <div> <i class="bi bi-list"></i></div></i>
+                        </a></div>
+                        <div class="nav-item btn-bottom-slide desk_none"><a href="../slide/slide.html">
+                            <div>關於 </div>
+                        </a></div>
+                    <div class="nav-item btn-bottom-slide desk_none"><a href="../search/search_login.html">
+                            <div>探索 </div>
+                        </a></div>
+                    <div class="nav-item btn-bottom-slide desk_none"><a href="./single.html">
+                            <div> 分帳</div>
+                        </a></div>
+                    <!-- 直接連到登入葉面 -->
+                    <div class="nav-item ">
+                        <a href="javascript:;">
+                            <div class="login" id="login_icon">
+                                <i class="bi bi-person-circle"></i>
+                                <div>邦加羅爾</div>
+                            </div>
+                        </a>
+                        <div class="downlist" >
+                            <a href="./single.html" class="downlist_fs"> <div class="downitem downlist_fs_1">群組</div></a>
+                            <a href="../group/group_page1.html" class="downlist_fs"> <div class="downitem">新增群組</div></a>
+                            <a href="../account/account.html" class="downlist_fs"> <div class="downitem">帳號</div></a>
+                            <a href="../login/logout.html" class="downlist_fs"> <div class="downitem downlist_fs_4">登出</div></a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="moba_list_item">
+            <a href="../search/search_login.html"><div class="moba_item">探索</div></a>
+            <a href="./single.html"><div class="moba_item">分帳</div></a>
+        </div>
+    </div>
+ <div class="overlay" id="new_pay_container">
+    <div class="newpay clearpay">
+        <div class="paytitle mg_bt"> <span>新支付</span> <i class="bi bi-x-lg" id="newpay_close"></i></div>
+        <h3 class="mg_top">付款人</h3>
+        <div class="payman mg_top">
+            <img src="../images/Ellipse 1.png" alt="帥氣的五官，犯罪的開端">
+            <h3 class="h3_mg">邦加羅爾</h3> <h3><span>付款</span></h3>
+        </div>
+        <div class="paymoney"><span>0</span><span>元</span></div>
+        <h3>幫誰付錢</h3>
+        <div class="whopay mg_top">
+            <div class="payman payman_check mg_top">
+                <div class="payman_left">
+                    <img src="../images/Ellipse 1.png" alt="帥氣的五官，犯罪的開端">
+                    <h3 class="h3_mg">邦加羅爾</h3>
+                </div>
+                <div class="payman_right">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                </div>
+                
+            </div>
+            <div class="payman payman_check mg_top">
+                <div class="payman_left">
+                    <img src="../images/Ellipse 1.png" alt="帥氣的五官，犯罪的開端">
+                    <h3 class="h3_mg">邦加羅爾</h3>
+                </div>
+                <div class="payman_right">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                </div>
+                
+            </div>
+        </div>
+        <h3 class="mg_top">目的</h3>
+        <input type="text" placeholder="請輸入訊息" class="input_class mg_top" >
+        <h3 class="mg_top">日期與時間</h3>
+        <div class="mg_top">11/3/2022, 11:15:13 PM</div>
+        <div class="seemore_center mg_top">
+            <button type="button" class="see_more" id="newpay_save">儲存</button>
+        </div>
+        
+    </div>
+    
+ </div>
+ <div class="overlay" id="clear_pay_88">
+    <div class="newpay clearpay">
+       <h3 class="lg_h3">清算所有債務</h3>
+       <h3 class="lg_h3_sure">確定要清算所有債務嗎?</h3>
+        <div class="seemore_center mg_top">
+            <button type="button" class="see_more" id="clear_cancel">取消</button>
+            <button type="button" class="see_more" id="clear_save">儲存</button>
+        </div>
+        
+    </div>
+    
+ </div>
+ <div class="overlay" id="group_member_plus">
+    <div class="newpay clearpay">
+        <div class="paytitle mg_bt"> <span>新增成員</span> <i class="bi bi-x-lg" id="group_close"></i></div>
+        <h3 class="mg_top">姓名</h3>
+        
+        <input type="text" placeholder="請輸入名稱" value="新台幣先生" class="input_class mg_top" >
+        
+        <div class="seemore_center mg_top">
+            <button type="button" class="see_more" id="group_member_save">儲存</button>
+        </div>
+        
+    </div>
+    
+ </div>
+ <div class="overlay" id="update_group">
+    <div class="newpay clearpay">
+        <div class="paytitle mg_bt"> <span>新支付</span> <i class="bi bi-x-lg" id="update_group_close"></i></div>
+        <h3 class="mg_top">群組名稱</h3>
+        <input type="text" placeholder="Super Funny" class="input_class mg_top" value="Super Funny">
+        <h3 class="mg_top">使用貨幣</h3>
+        <input type="text" placeholder="台幣" class="input_class mg_top" value="台幣">
+        <div class="seemore_center mg_top">
+            <button type="button" class="see_more" id="update_group_save">儲存</button>
+        </div>
+        
+    </div>
+    
+ </div>
+
+    <div class="container">
+        <div class="group_info">
+            <div class="group_left">
+                <div class="group_name_title">群組名稱:</div>
+                <div class="group_member_title">成員數:</div>
+                <div class="group_spend_title">花費筆數:</div>
+                <div class="group_allcost_title">總支出:</div>
+                <div class="group_mystatus_title">目前我的狀態:</div>
+            </div>
+            <div class="group_right">
+                <div class="group_name_info">Super Funny</div>
+                <div class="group_member_info">3</div>
+                <div class="group_spend_info">3</div>
+                <div class="group_allcost_info">9453</div>
+                <div class="group_mystatus_info">無負債</div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="tab" id="tab">
+        <ul class="tab-title">
+            <li><a href="#tab01">支出</a></li>
+            <li><a href="#tab02">負債</a></li>
+            <li><a href="#tab03">成員</a></li>
+            <li id="update_group_btn"><a href="#tab04">編輯群組</a></li>
+        </ul>
+        <div id="tab01" class="tab-inner">
+            <div class="contain_title">支付款項</div>
+            <div class="btn_center"><button class="see_more" id="creat_newpay">新增支付款項</button></div>
+
+        </div>
+
+        <div id="tab02" class="tab-inner">
+            <div class="contain_title">結清債務</div>
+            <div class="btn_center">
+                <button class="see_more" id="clearpay_btn">結清款項</button>
+            </div>
+
+        </div>
+        <div id="tab03" class="tab-inner">
+            <div class="contain_title">成員</div>
+            <div class="btn_center">
+                <button class="see_more" id="plus_member">新增成員</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../final/header/app.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
